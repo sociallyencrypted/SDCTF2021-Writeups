@@ -1,6 +1,10 @@
 # SDCTF2021-Writeups
 Hi! These are the official write-ups for the OSINT category by team Da Froggies for SDCTF 2021 organised by UC San Diego.
 
+## Write-up by
+1. sociallyencrypted
+2. Luciolle24
+
 ## hide-and-seek
 ### Category
 OSINT
@@ -32,7 +36,9 @@ I've gotten some more good intel. Apparently, the following information is the l
 `810237829564727312-810359639975526490`
 
 ### Solution
-The two pieces of info clearly pointed that the first is one part of a [discord server URL](https://www.discord.gg/4KcDWnUYMs) and Luciolle pointed out the second one includes message IDs. On joining the discord, we found a number of messages with different flags. Now, copying one of those IDs, we saw a URL like `discord.com/channels/810237829564727308/810237829564727312/810382741837185046`. We recognised that the `810237829564727312` part of the hint was indicative of the user posting the message, so we had to modify the last part of the URL. Changing that to `discord.com/channels/810237829564727308/810237829564727312/810382741837185046` we got the flag!
+We looked at the two pieces of info and decided that the first was one part of a [discord server URL](https://www.discord.gg/4KcDWnUYMs). This brought us to a series of messages with flags. The URLs of the messages were like `discord.com/channels/810237829564727308/810237829564727312/810382741837185046`. This prompted us to use the second part of the clue which was a message ID to look
+for the correct flag. Changing the URL to `discord.com/channels/810237829564727308/810237829564727312/810382741837185046` we got the flag!
+![alt text](https://github.com/sociallyencrypted/SDCTF2021-Writeups/blob/9efa4d90e5f2f5f5eb17e8bbeab838b54f402434/sdctf%20admin%20chat%20server.png "Screenshot of the Discord Server")
 
 ### Flag
 `sdctf{m@st3R_h@Ck3R_4807}`
@@ -68,3 +74,20 @@ Google Dorking was our friend again! This time, our search query was `site:ucsd.
 
 ### Flag
 `sdctf{N1ce_d0rKiNG_C@pt41N}`
+
+### Flag
+`Daniel Kane`
+
+## this-flag-has-been-stolen
+### Category
+OSINT
+### Points
+88
+### Description
+We used to offer this flag for free on our official SDCTF website, but unfortunately hackers have stolen it. Sorry.
+
+### Solution
+As the flag supposedly once existed on the website and does not exist there now, we needed to find a way to look at an earlier version of the website. So we decided to use [The Wayback Machine](https://archive.org/web/). A snapshot of sdc.tf from Jan 30 2021 had the flag at the footer of the page.
+
+### Flag
+`sdctf{Th3_L0$t_trE@$ur3_0f_th3_INt3rnEt}`
