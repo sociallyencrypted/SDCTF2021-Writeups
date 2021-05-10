@@ -26,9 +26,9 @@ OSINT
 200
 ### Description
 I've gotten some more good intel. Apparently, the following information is the location of another flag!
-### First piece of info
+#### First piece of info
 `gg/4KcDWnUYMs`
-### Second piece of info
+#### Second piece of info
 `810237829564727312-810359639975526490`
 
 ### Solution
@@ -36,3 +36,35 @@ The two pieces of info clearly pointed that the first is one part of a [discord 
 
 ### Flag
 `sdctf{m@st3R_h@Ck3R_4807}`
+
+## speed-studying
+### Category
+OSINT
+### Points
+75
+### Description
+Help, I'm studying for a test, and I need you to find an example problem for me... I'm sure you can find it out there somewhere! I'm trying to remember this professor's name but I'm having trouble...who is the only professor at UC San Diego that is both an Assistant Professor for the Computer Science department, and an Associate Professor for the Mathematics department?
+#### Note
+The flag is not in the usual `sdctf{}` format. Submit that professor's First and Last name (but not the middle name, if any) separated by a single space. For example, if the professor has first name John and last name Appleseed, then...
+#### Please Submit
+John Appleseed
+
+### Solution
+With a quick google search about UC San Diego, we figured out that the domain for UCSD is `ucsd.edu`. Now, we did some Google Dorking (the exact query we used was `site:ucsd.edu Assistant Professor Computer Science Mathematics`) and after scrolling without results on a few pages, we finally found the [Faculty Profile](http://cseweb.ucsd.edu/~dakane/) of Daniel Kane, the professor we had been looking for.
+
+### Flag
+`Daniel Kane`
+
+## speed-studying-2
+### Category
+OSINT
+### Points
+282
+### Description
+Nice, now that you've found Daniel Kane, I need an example from one of his classes. I don't remember anything about it other than its called "The Skyline Problem". Can you find it?
+
+### Solution
+Google Dorking was our friend again! This time, our search query was `site:ucsd.edu Skyline Problem` which led us to a specific PDF called [Homework3](https://cseweb.ucsd.edu/~dakane/CSE101%20Problem%20Archive/F18/Homework3.pdf) which had the flag in the footer :)
+
+### Flag
+`sdctf{N1ce_d0rKiNG_C@pt41N}`
