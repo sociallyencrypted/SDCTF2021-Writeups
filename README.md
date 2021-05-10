@@ -75,9 +75,6 @@ Google Dorking was our friend again! This time, our search query was `site:ucsd.
 ### Flag
 `sdctf{N1ce_d0rKiNG_C@pt41N}`
 
-### Flag
-`Daniel Kane`
-
 ## this-flag-has-been-stolen
 ### Category
 OSINT
