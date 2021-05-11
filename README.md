@@ -18,7 +18,7 @@ We don't know the flag, but we know some people who do! Here are their locations
 `qFHIm0c.jpeg`
 
 ### Solution
-We looked at the two locations and immediately realised that the first location is one part of a [youtube URL](https://www.youtube.com/watch?v=hqXOIZtRYZU) while the second one is one part of some image sharing website (which we guessed out to be [Imgur](https://i.imgur.com/qFHIm0c.jpeg)) . With this information we were able to obtain the flags in two pieces (with the added fun of watching Aaron reveal his GPA in the youtube video).
+We looked at the two locations and immediately realised that the first location is one part of a [youtube URL](https://www.youtube.com/watch?v=hqXOIZtRYZU) while the second one is one part of an image sharing website (which we guessed out to be [Imgur](https://i.imgur.com/qFHIm0c.jpeg)) . With this information we were able to obtain the flags in two pieces (with the added fun of watching Aaron reveal his GPA in the youtube video).
 
 ### Flag
 `sdctf{W0w_1_h4D_n0_ID3a!}`
