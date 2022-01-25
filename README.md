@@ -37,7 +37,7 @@ I've gotten some more good intel. Apparently, the following information is the l
 
 ### Solution
 We looked at the two pieces of info and decided that the first was one part of a [discord server URL](https://www.discord.gg/4KcDWnUYMs). This brought us to a series of messages with flags. The URLs of the messages were like `discord.com/channels/810237829564727308/810237829564727312/810382741837185046`. This prompted us to use the second part of the clue which was a message ID to look
-for the correct flag. Changing the URL to `discord.com/channels/810237829564727308/810237829564727312/810382741837185046` we got the flag!
+for the correct flag. Changing the URL to `discord.com/channels/810237829564727308/810237829564727312/810359639975526490` we got the flag!
 ![alt text](https://github.com/sociallyencrypted/SDCTF2021-Writeups/blob/9efa4d90e5f2f5f5eb17e8bbeab838b54f402434/sdctf%20admin%20chat%20server.png "Screenshot of the Discord Server")
 
 ### Flag
